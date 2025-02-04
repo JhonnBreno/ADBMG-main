@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./imagens/ADBMG-favicon.png" type="image/x-icon">
     <title>Church</title>
 </head>
-<body>
+<i>
     <header>
         <div class="ADB">
             <img src="./imagens/adb-logo.png" alt="adb ministerio da graça">
@@ -28,11 +28,31 @@
             <i class="material-symbols-outlined">menu</i>
         </div>
     </header>
+
+    <div class="bible" id="bible">
+        <img src="./imagens/bible.gif" alt="cloud1">
+    </div>
+
+    <!--times-->
+
+    <div class="container-modal" id="containerModal">
+
+        <div class="modal">
+        <div class="close" id="close">&times</div>
+        <h1>seja bem vindo</h1>
+        <img src="./imagens/id.gif" alt="">
+        <form action="">
+            <label for="name">Nome</label>
+            <input type="text" name="nome" placeholder="seu nome" id="name" required>
+        </form>
+    </div>
+</div>
+
     <div class="sidebar hidden" id="sidebar">
         <ul>
             <li><a href="./biblia/biblia.html">Biblia</a></li>
             <li><a href="#">Contato</a></li>
-            <li><a href="#">Locais</a></li>
+            <li><a href="./locais/locais.html">Locais</a></li>
         </ul>
     </div>
     <main>
@@ -46,7 +66,7 @@
     <div class="container">
             <iframe src="https://www.youtube.com/embed/yQ4HSGGmloo?si=uzXfxV2tvXscJLKW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    <div class="contribua" >
+    <div class="contribua">
         <div class="donate hidden2" id="contribua">
             <div class="card-donate">
                 <h3>Contribua e ajude nosso projeto</h3>
@@ -55,10 +75,11 @@
                 <div class="qrcode">
                 <img src="./imagens/qrcode.jpg" alt="qrcode">
             </div>
-                <button><a href="#">Contribuir</a></button>
+                <button onclick="copyPixUrl()">Contribuir</button>
             </div>
         </div>
     </div>
+
     <div class="btn-donate" id="btn-donate">
         <button>Clique e Contribua</button>
     </div>
@@ -66,20 +87,32 @@
         <div class="new-members">
             <img src="./imagens/members-img.jpg" alt="prayer">
             <h3>Sou novo na fé?</h3>
-            <p>Leia um e-book para lhe ajudar na caminhada</p>
+            <p>Leia um E-book para lhe ajudar na caminhada</p>
             <button>LER</button>
         </div>
 
         <div class="spouse">
-            <img src="./imagens/members-img.jpg" alt="prayer">
-            <h3>Problemas com o casamento</h3>
-            <p>Leia um e-book para lhe ajudar na caminhada</p>
+            <img src="./imagens/spouse.jpg" alt="prayer">
+            <h3>Problemas conjugais</h3>
+            <p>Leia um E-book para lhe ajudar na caminhada</p>
+            <button>LER</button>
+        </div>
+
+        <div class="finance">
+            <img src="./imagens/finance.jpg" alt="prayer">
+            <h3>Problemas Financeiros</h3>
+            <p>Leia um E-book para lhe ajudar na caminhada</p>
+            <button>LER</button>
+        </div>
+
+        <div class="tentacion">
+            <img src="./imagens/tentacion.jpg" alt="prayer">
+            <h3>Problemas com pecado</h3>
+            <p>Leia um E-book para lhe ajudar na caminhada</p>
             <button>LER</button>
         </div>
 </div>
-<div class="biblia" id="biblia">
-    <iframe src="https://www.bibliaonline.com.br/acf/livros" frameborder="0"></iframe>
-</div>
+
     <script src="interation.js"></script>
 </body>
 </html>

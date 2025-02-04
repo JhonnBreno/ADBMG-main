@@ -6,10 +6,10 @@ telas grandes (min-width: 1024px)*/
 
 @media screen and (min-width: 768px){
     .text-main{
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
     .text-img h1{
-        font-size: 1.5em;
+        font-size: 2em;
         width: 80%;
     }
     .container{
@@ -28,6 +28,25 @@ telas grandes (min-width: 1024px)*/
     header{
         background-image: linear-gradient(to bottom, #040d1b, #081a2a, #0b2638, #0f3347);
     }
+    .card-donate h3{
+        font-size: 3rem;
+    }
+    .card-donate p{
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .container-members{
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar{
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    .btn-donate button{
+        font-size: 2em;
+        font-weight: bolder;
+    }
 }
 @media screen and (min-width:1024px){
     header{
@@ -44,7 +63,7 @@ telas grandes (min-width: 1024px)*/
         display: none;
     }
     .text-img h1{
-        font-size: 3em;
+        font-size: 3.1em;
         width: 80%;
     }
     .text-main h1{
@@ -65,5 +84,35 @@ telas grandes (min-width: 1024px)*/
     .navbar{
         display: block;
     }
-
+}
+@media (orientation: landscape) {
+    .visible{
+        height: 100px;
+    }
+    .main-img img{
+        height:70vh;
+    }
+    .container iframe{
+        height: 50vh;
+    }
+    .btn-donate{
+        padding-bottom: 100px;
+    }
+    .card-donate{
+        margin: 20px 0px;
+    }
+    .container{
+        height: 0px;
+    }
+}
+@media (orientation: portrait){
+    .btn-donate{
+        padding-bottom: 110px;
+    }
+    .contribua{
+        padding: 40px 0px;
+    }
+    .card-donate img{
+        width: 100px;
+    }
 }

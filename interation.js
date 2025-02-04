@@ -46,3 +46,39 @@ btnDonate.addEventListener('click', () =>{
         contribua.classList.add('hidden2')
     }
 })
+
+function copyPixUrl() {
+    var pixUrl = "542f1979-bf33-4c42-82ec-771dd057ec5f";
+    var tempInput = document.createElement("input");
+    tempInput.value = pixUrl;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // Para dispositivos móveis
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("A chave pix foi copiada: " + pixUrl);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const bible = document.getElementById('bible');
+    const containerModal = document.getElementById('containerModal');
+    const close = document.getElementById('close');
+
+    // Adiciona um ouvinte de evento ao botão que abre o modal
+    bible.addEventListener('click', function() {
+        containerModal.style.display = "flex";
+    });
+
+    // Adiciona um ouvinte de evento ao botão que fecha o modal
+    close.addEventListener('click', function() {
+        containerModal.style.display = "none";
+    });
+
+        // Adiciona um ouvinte de evento à janela para fechar o modal ao clicar fora dele
+        window.addEventListener("click", function(event) {
+            if (event.target === containerModal) {
+                containerModal.style.display = "none";
+            }
+            })    
+});
+
