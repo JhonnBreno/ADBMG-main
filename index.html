@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="media-query.css">
     <link rel="shortcut icon" href="./imagens/ADBMG-favicon.png" type="image/x-icon">
-    <title>Church</title>
+    <title>ADBMG</title>
 </head>
 <i>
     <header>
@@ -20,7 +20,7 @@
         <div class="navbar">
             <ul>
                 <li><a href="./biblia/biblia.html">Biblia</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./radio/radio.html">Radio</a></li>
                 <li><a href="#">Locais</a></li>
             </ul>
         </div>
@@ -33,10 +33,9 @@
         <img src="./imagens/bible.gif" alt="cloud1">
     </div>
 
-    <!--times-->
+    <!--Modal-->
 
     <div class="container-modal" id="containerModal">
-
         <div class="modal">
         <div class="close" id="close">&times</div>
         <h1>seja bem vindo</h1>
@@ -51,7 +50,7 @@
     <div class="sidebar hidden" id="sidebar">
         <ul>
             <li><a href="./biblia/biblia.html">Biblia</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="./radio/radio.html">Radio</a></li>
             <li><a href="./locais/locais.html">Locais</a></li>
         </ul>
     </div>
@@ -62,7 +61,6 @@
             </div>
         </div>
     </main>
-    <br>
     <div class="container">
             <iframe src="https://www.youtube.com/embed/yQ4HSGGmloo?si=uzXfxV2tvXscJLKW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -83,36 +81,74 @@
     <div class="btn-donate" id="btn-donate">
         <button>Clique e Contribua</button>
     </div>
+
     <div class="container-members">
         <div class="new-members">
             <img src="./imagens/members-img.jpg" alt="prayer">
             <h3>Sou novo na fé?</h3>
             <p>Leia um E-book para lhe ajudar na caminhada</p>
-            <button>LER</button>
+            <a href="./imagens/Finanças-Pessoais-à-Luz-da-Bíblia.pdf" download="Finanças-Pessoais-à-Luz-da-Bíblia.pdf"><button>LER</button></a>
         </div>
 
         <div class="spouse">
             <img src="./imagens/spouse.jpg" alt="prayer">
             <h3>Problemas conjugais</h3>
             <p>Leia um E-book para lhe ajudar na caminhada</p>
-            <button>LER</button>
+            <a href="./imagens/Finanças-Pessoais-à-Luz-da-Bíblia.pdf" download="Finanças-Pessoais-à-Luz-da-Bíblia.pdf"><button>LER</button></a>
         </div>
 
         <div class="finance">
             <img src="./imagens/finance.jpg" alt="prayer">
             <h3>Problemas Financeiros</h3>
             <p>Leia um E-book para lhe ajudar na caminhada</p>
-            <button>LER</button>
+            <a href="./imagens/Finanças-Pessoais-à-Luz-da-Bíblia.pdf" download="Finanças-Pessoais-à-Luz-da-Bíblia.pdf"><button>LER</button></a>
+            
         </div>
 
         <div class="tentacion">
             <img src="./imagens/tentacion.jpg" alt="prayer">
             <h3>Problemas com pecado</h3>
             <p>Leia um E-book para lhe ajudar na caminhada</p>
-            <button>LER</button>
+            <a href="./imagens/Finanças-Pessoais-à-Luz-da-Bíblia.pdf" download="Finanças-Pessoais-à-Luz-da-Bíblia.pdf"><button>LER</button></a>
         </div>
 </div>
 
+        <section>
+            <div class="magazine">
+                <h1>Revista Biblica</h1>
+                <img src="./imagens/revista.jpeg" alt="Aprender">
+            </div>
+        </section>
+
+        <footer>
+            <div class="final">
+
+                <div class="utilities">
+                    <h1>Links Úteis</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contatos</a></li>
+                        <li><a href="./locais/locais.html">Locais</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-final">
+                    <h1>Assembléia de Deus no Brasil Ministério da Graça</h1>
+                    <p>Nós temos como objetivo distribuir o reino dos céus através da palavra do Senhor a toda a criatura trazendo as boas novas de Jesus Cristo</p>
+                </div>
+
+                <form action="interation.js" class="more">
+                    <h1>Contato</h1>
+                    <input type="email" placeholder="Digite seu Email" required>
+                    <textarea name="message" id="message" placeholder="digite sua MENSAGEM..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Assembleia de Deus Ministério da Graça. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     <script src="interation.js"></script>
 </body>
 </html>

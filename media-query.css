@@ -38,9 +38,10 @@ telas grandes (min-width: 1024px)*/
     .container-members{
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
     .sidebar{
-        font-size: 1.5em;
+        font-size: 1em;
         font-weight: bolder;
     }
     .btn-donate button{
@@ -84,6 +85,29 @@ telas grandes (min-width: 1024px)*/
     .navbar{
         display: block;
     }
+    .container-members{
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        color: #585858;
+    }
+    .more input,
+    .more textarea{
+        width: 400px;
+        font-size: 1.5em;
+    }
+    .more button{
+    font-size: 1.5em;
+    }
+    footer .final{
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5em;
+    }
+    footer .final a, .final p{
+        font-size: 1.5em;
+
+    }
 }
 @media (orientation: landscape) {
     .visible{
@@ -94,9 +118,6 @@ telas grandes (min-width: 1024px)*/
     }
     .container iframe{
         height: 50vh;
-    }
-    .btn-donate{
-        padding-bottom: 100px;
     }
     .card-donate{
         margin: 20px 0px;

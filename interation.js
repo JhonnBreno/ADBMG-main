@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', function() {
+    mudarImagem();
+
 const bar = document.getElementById('bar')
 const sidebar = document.getElementById('sidebar')
 
@@ -27,8 +30,6 @@ function mudarImagem() {
         imagem.src = './imagens/noite.jpg'; // noite
     }
 }
-// Chama a função ao carregar a página
-mudarImagem();
 
 // Atualiza a imagem a cada hora
 setInterval(mudarImagem, 3600000); // 3600000 ms = 1 hora
@@ -59,7 +60,7 @@ function copyPixUrl() {
     alert("A chave pix foi copiada: " + pixUrl);
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+
     const bible = document.getElementById('bible');
     const containerModal = document.getElementById('containerModal');
     const close = document.getElementById('close');
