@@ -24,7 +24,6 @@ body{
     width: 200px;
     background-color: grey;
     box-shadow: 3px 3px 5px 1px rgba(128, 128, 128, 0.642);
-
 }
 .card img{
     width: 200px;
@@ -54,4 +53,9 @@ input:focus{
     border:none;
     outline: none;
     width: 200px;
+}
+.noResults{
+    background-color: white;
+    text-align: center;
+    visibility: hidden;
 }
